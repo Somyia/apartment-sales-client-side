@@ -1,0 +1,15 @@
+.hometex-form{
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.input-field.css-1u3bzj6-MuiFormControl-root-MuiTextField-root{
+    width: 100%;
+    margin-bottom: 10px;
+    
+}
+.input-field.css-1u3bzj6-MuiFormControl-root-MuiTextField-root label{
+    font-family: 'Jost', sans-serif;
+
+}

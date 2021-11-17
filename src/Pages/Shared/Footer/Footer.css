@@ -1,0 +1,48 @@
+.footer-area{
+    
+    background-color: #f5efe0;
+    font-family: 'Jost', sans-serif;
+}
+.footer-icon i{
+    font-size: 30px;
+    color: #c9b47f;
+}
+.footer-bottom{
+    background-color: #c9b47f;
+    padding: 10px;
+    color: rgb(58, 55, 55);
+    
+}
+.footer-heading.css-ahj2mt-MuiTypography-root{
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #c9b47f;
+    font-weight: 700;
+}
+.footer-text.css-ahj2mt-MuiTypography-root{
+    font-family: 'Jost', sans-serif;
+}
+.footer-bottom .css-ahj2mt-MuiTypography-root{
+    font-family: 'Jost', sans-serif;
+}
+.footer-icon-text .css-83ijpv-MuiTypography-root{
+    font-family: 'Jost', sans-serif;
+}
+.footer-icon-text .css-10hburv-MuiTypography-root{
+    font-family: 'Jost', sans-serif;
+}
+@media screen and (max-width: 668px){
+    .footer-heading.css-ahj2mt-MuiTypography-root{
+        font-size: 15px;
+    }
+    .footer-text.css-ahj2mt-MuiTypography-root{
+        font-size: 0.8rem;
+    }
+    .footer-icon-text .css-83ijpv-MuiTypography-root{
+        font-size: 0.8rem;
+    }
+    .footer-icon-text .css-10hburv-MuiTypography-root{
+        font-size: 0.8rem;
+    }
+}

@@ -1,10 +1,13 @@
 .App {
-  text-align: center;
+  font-family: 'Jost', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+  text-decoration: none;
+}
+@media screen and (max-width: 668px){
+  .App{
+    font-size: 13px;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {

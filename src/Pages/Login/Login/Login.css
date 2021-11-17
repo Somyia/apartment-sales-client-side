@@ -1,0 +1,12 @@
+
+.access-form{
+    width: 40%;
+    margin: 70px auto;
+    padding: 40px;
+    box-shadow: 2px 4px 10px #c9b47f;
+}
+a.access-info .css-1e6y48t-MuiButtonBase-root-MuiButton-root{
+    color: #c9b47f;
+    font-family: 'Jost', sans-serif;
+    padding: 10px 0;
+}

@@ -1,0 +1,33 @@
+.css-i4ntra-MuiPaper-root-MuiAppBar-root {
+    box-shadow: none !important;
+    background-color: transparent !important;
+}
+.flex-display{
+    display: flex;
+    align-items: center;
+}
+.css-1t29gy6-MuiToolbar-root{
+    justify-content: space-between;
+}
+.css-ahj2mt-MuiTypography-root.logo-text {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #312e2e;
+    font-family: 'Jost', sans-serif;
+}
+.logo-text span{
+    color: #c9b47f;
+    
+}
+@media screen and (max-width: 668px){
+    .css-ahj2mt-MuiTypography-root.logo-text {
+        font-size: 1.5rem;
+    }
+    .navigate{
+        display: none;
+    }
+    .mobile-navigate .menu-item button.css-1y942vo-MuiButtonBase-root-MuiButton-root{
+        display: block;
+        font-size: 11px;
+    }
+}

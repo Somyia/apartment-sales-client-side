@@ -1,0 +1,16 @@
+.menu-item{
+    color: #312e2e;
+    
+}
+.menu-item button{
+    font-weight: 700;
+    font-family: 'Jost', sans-serif;
+}
+.menu-item button:hover{
+    background-color: transparent;
+}
+.menu-item:hover {
+    color: #c9b47f;
+    
+}
+

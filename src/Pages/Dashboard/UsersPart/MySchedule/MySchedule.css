@@ -1,0 +1,25 @@
+.apartment-table.css-quj9j6-MuiTable-root thead th{
+    color: #c9b47f;
+    font-weight: 700;
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+}
+
+.apartment-table.css-quj9j6-MuiTable-root tbody th, .apartment-table.css-quj9j6-MuiTable-root tbody td{
+    font-family: 'Jost', sans-serif;
+}
+@media screen and (max-width: 668px){
+    .apartment-table.css-quj9j6-MuiTable-root thead th{
+        font-size: 13px;
+    }
+    .apartment-table.css-quj9j6-MuiTable-root tbody th, .apartment-table.css-quj9j6-MuiTable-root tbody td{
+        font-size: 11px;
+       
+    }
+    .css-1ex1afd-MuiTableCell-root, .css-177gid-MuiTableCell-root{
+        padding: 3px;
+    }
+    .css-177gid-MuiTableCell-root{
+        font-size: 11px;
+    }
+}
