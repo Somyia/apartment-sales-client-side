@@ -1,9 +1,10 @@
 /* gallery styles  */
-.css-1mktp8m-MuiTypography-root.title{
+.css-6s8q25.title {
     text-align: center;
     font-weight: 700;
-    color:#c9b47f;
+    color: #c9b47f;
     font-family: 'Jost', sans-serif;
+    margin: 40px 0;
 }
 .gallery-wrapper{
     display: grid;

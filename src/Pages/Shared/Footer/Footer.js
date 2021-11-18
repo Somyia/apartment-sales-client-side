@@ -23,7 +23,7 @@ const Footer = () => {
                                 <img width="70px" src={logo} alt="logo" />
                             </div>
                             <div>
-                                <Typography component="h1" className="logo-text"> Home<span>Tex</span></Typography>
+                                <h1 className="logo-text"> Home<span>Tex</span></h1>
 
                             </div>
                         </div>

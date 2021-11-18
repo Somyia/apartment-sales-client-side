@@ -13,12 +13,18 @@
     color: rgb(58, 55, 55);
     
 }
-.footer-heading.css-ahj2mt-MuiTypography-root{
+.css-9l3uo3.footer-heading{
     font-family: 'Jost', sans-serif;
     font-size: 20px;
     text-transform: uppercase;
     color: #c9b47f;
     font-weight: 700;
+}
+.css-9l3uo3{
+    font-family: 'Jost', sans-serif;
+}
+.css-yb0lig, .css-mbfek{
+    font-family: 'Jost', sans-serif;
 }
 .footer-text.css-ahj2mt-MuiTypography-root{
     font-family: 'Jost', sans-serif;

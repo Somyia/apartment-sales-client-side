@@ -5,8 +5,19 @@
     padding: 40px;
     box-shadow: 2px 4px 10px #c9b47f;
 }
-a.access-info .css-1e6y48t-MuiButtonBase-root-MuiButton-root{
+.css-i44wyl.input-field {
+    width: 100%;
+    margin: 5px;
+}
+.access-info ..css-1ujsas3{
     color: #c9b47f;
     font-family: 'Jost', sans-serif;
     padding: 10px 0;
+}
+.css-79xub.home-btn {
+    color: #c9b47f;
+    border: 2px solid #c9b47f;
+    font-weight: 700;
+    font-family: "Jost', sans-serif";
+    margin: 5px;
 }

@@ -35,12 +35,6 @@
     font-size: 1.7rem;
     margin: 20px 0;
 }
-.css-1rwt2y5-MuiButtonBase-root-MuiButton-root.home-btn{
-    color: #c9b47f;
-    border: 2px solid #c9b47f;
-    font-weight: 700;
-    font-family: 'Jost', sans-serif;
-}
 .css-1rwt2y5-MuiButtonBase-root-MuiButton-root.home-btn:hover{
     background-color: #c9b47f;
     border: 2px solid #c9b47f;

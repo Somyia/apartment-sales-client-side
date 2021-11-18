@@ -10,6 +10,12 @@ import { NavLink } from 'react-router-dom';
 
 
 const Apartment = (props) => {
+    const hometexButton = {
+        color: '#c9b47f',
+        border: '2px solid #c9b47f',
+        fontWeight: '700',
+        fontFamily: "Jost', sans-serif"
+    }
     const { _id, apartment_name, location, floor_no, bathrooms, kitchen, garage, bedrooms, apartment_photo, description } = props.apartment;
     return (
         <Grid item xs={12} sm={12} md={6}>
@@ -43,7 +49,7 @@ const Apartment = (props) => {
                             <small>{location}</small>
                             <p>{description}</p>
                             <NavLink to={`/takeSchedule/${_id}`}>
-                                <Button className="home-btn" variant="outlined">Take a Tour</Button>
+                                <Button style={hometexButton} variant="outlined">Take a Tour</Button>
                             </NavLink>
                         </div>
                     </div>

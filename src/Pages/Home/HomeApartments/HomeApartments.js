@@ -5,6 +5,12 @@ import Apartment from '../../Shared/Apartment/Apartment';
 import { NavLink } from 'react-router-dom';
 
 const HomeApartments = () => {
+    const hometexButton = {
+        color: '#c9b47f',
+        border: '2px solid #c9b47f',
+        fontWeight: '700',
+        fontFamily: "Jost', sans-serif"
+    }
     const [apartments, setApartments] = useState([]);
 
     useEffect(() => {
@@ -33,7 +39,7 @@ const HomeApartments = () => {
                 </Grid>
                 <div style={{ textAlign: "center", margin: '40px 0' }}>
                     <NavLink to="/allApartments">
-                        <Button className="home-btn" variant="outlined">Find More Apartments</Button>
+                        <Button style={hometexButton} variant="outlined">Find More Apartments</Button>
                     </NavLink>
                 </div>
             </Container>

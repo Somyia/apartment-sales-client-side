@@ -35,12 +35,16 @@ const Navbar = (props) => {
     );
 
     const container = window !== undefined ? () => window().document.body : undefined;
+    const rightAlign = {
+        textAlign: 'right',
 
+    }
     return (
-        <Box sx={{ display: 'flex' }}>
+
+        < Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
             <CssBaseline />
             <AppBar
-                position="fixed"
+                style={{ background: '#fff', boxShadow: 'none' }}
                 sx={{
                     width: { sm: `100 % ` },
                     ml: { sm: `${drawerWidth}px` },
@@ -48,24 +52,24 @@ const Navbar = (props) => {
             >
                 <Toolbar>
 
-                    <Typography variant="" noWrap component="div">
+                    <div>
                         <NavLink to="/home">
                             <div className="flex-display">
                                 <div>
                                     <img width="70px" src={logo} alt="logo" />
                                 </div>
                                 <div>
-                                    <Typography component="h1" className="logo-text"> Home<span>Tex</span></Typography>
+                                    <h1 className="logo-text"> Home<span>Tex</span></h1>
                                 </div>
                             </div>
                         </NavLink>
-                    </Typography>
-                    <Box style={{ textAlign: 'right' }}>
+                    </div>
+                    <div style={rightAlign}>
                         <div className="navigate">
                             <Navigation></Navigation>
                         </div>
 
-                    </Box>
+                    </div>
                     <IconButton
                         color="inherit"
                         aria-label="open drawer"

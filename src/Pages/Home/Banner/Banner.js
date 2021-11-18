@@ -5,7 +5,14 @@ import img from '../../../a.jpg';
 import './Banner.css';
 
 
+
 const Banner = () => {
+    const hometexButton = {
+        color: '#c9b47f',
+        border: '2px solid #c9b47f',
+        fontWeight: '700',
+        fontFamily: "Jost', sans-serif"
+    }
     return (
 
         <Grid container className="banner">
@@ -19,7 +26,7 @@ const Banner = () => {
                     <h1>Buy Your Apartment With Hometex</h1>
                     <h4>Modern Apartment Make Your Life Better</h4>
                     <NavLink to="/allApartments">
-                        <Button className="home-btn" variant="outlined">Find Your Apartment</Button>
+                        <Button style={hometexButton} variant="outlined">Find Your Apartment</Button>
                     </NavLink>
                 </div>
             </div>

@@ -1,17 +1,18 @@
 
-.css-o69gx8-MuiCardMedia-root.client-image{
+.css-rhsghg.client-image{
     border-radius: 50%;
     width: 80px;
     height: 80px;
 }
-.css-r40f8v-MuiTypography-root.review {
+.css-u30lmt.review {
     font-weight: 400;
     font-size: 1.02rem;
     line-height: 1.5;
     color: #4d4a4a;
     font-family: 'Jost', sans-serif;
 }
-.css-46bh2p-MuiCardContent-root {
+
+.css-1qw96cp {
     padding: 20px;
 
 }
@@ -21,7 +22,10 @@
 .review-bottom div{
     margin-left: 15px;
 }
-.css-h93ljk-MuiTypography-root.client-name {
+.css-s18byi {
+    height: 315px;
+}
+.css-t1nuxs {
     font-weight: 700;
     font-size: 1.3rem;
     text-transform: uppercase;
