@@ -17,7 +17,7 @@ const ManageSchedule = () => {
 
 
     const handleUpdate = id => {
-        fetch(`https://quiet-sea-21548.herokuapp.com/schedules/${id}`, {
+        fetch(`https://mighty-sea-02606.herokuapp.com/schedules/${id}`, {
             method: 'put',
 
         })
@@ -30,7 +30,7 @@ const ManageSchedule = () => {
     }
 
     useEffect(() => {
-        fetch('https://quiet-sea-21548.herokuapp.com/schedules')
+        fetch('https://mighty-sea-02606.herokuapp.com/schedules')
             .then(res => res.json())
             .then(data => setSchedules(data))
     }, [schedules]);

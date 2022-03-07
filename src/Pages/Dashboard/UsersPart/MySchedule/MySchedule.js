@@ -19,7 +19,7 @@ const MySchedule = () => {
     const handleCancle = id => {
         const deletion = window.confirm('Are you sure to delete');
         if (deletion) {
-            fetch(`https://quiet-sea-21548.herokuapp.com/schedules/${id}`, {
+            fetch(`https://mighty-sea-02606.herokuapp.com/schedules/${id}`, {
                 method: 'delete'
             })
                 .then(res => res.json())
@@ -34,7 +34,7 @@ const MySchedule = () => {
     }
 
     useEffect(() => {
-        const url = `https://quiet-sea-21548.herokuapp.com/schedules`;
+        const url = `https://mighty-sea-02606.herokuapp.com/schedules`;
         fetch(url)
             .then(res => res.json())
             .then(data => setMySchedules(data))

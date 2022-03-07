@@ -15,7 +15,7 @@ const ManageTour = () => {
     const handleDelete = id => {
         const deletion = window.confirm('Are you sure to delete');
         if (deletion) {
-            fetch(`https://quiet-sea-21548.herokuapp.com/apartments_info/${id}`, {
+            fetch(`https://mighty-sea-02606.herokuapp.com/apartments_info/${id}`, {
                 method: 'delete'
             })
                 .then(res => res.json())
@@ -29,7 +29,7 @@ const ManageTour = () => {
     }
 
     useEffect(() => {
-        fetch('https://quiet-sea-21548.herokuapp.com/apartments_info')
+        fetch('https://mighty-sea-02606.herokuapp.com/apartments_info')
             .then(res => res.json())
             .then(data => setApartments(data))
     }, [apartments]);

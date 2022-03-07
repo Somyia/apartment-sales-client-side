@@ -63,7 +63,7 @@ const useFirebase = () => {
     }, []);
 
     useEffect(() => {
-        fetch(`https://quiet-sea-21548.herokuapp.com/users/${user.email}`)
+        fetch(`https://mighty-sea-02606.herokuapp.com/users/${user.email}`)
             .then(res => res.json())
             .then(data => {
                 setAdmin(data.admin)
@@ -82,7 +82,7 @@ const useFirebase = () => {
 
     const savedUser = (email, displayName) => {
         const user = { email, displayName };
-        fetch('https://quiet-sea-21548.herokuapp.com/users', {
+        fetch('https://mighty-sea-02606.herokuapp.com/users', {
             method: 'post',
             headers: {
                 'content-type': 'application/json'

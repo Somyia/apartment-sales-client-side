@@ -27,7 +27,7 @@ const AddApartmentInfo = () => {
             apartment_photo: apartmentInfo.apartment_photo,
             description: apartmentInfo.description
         }
-        fetch('https://quiet-sea-21548.herokuapp.com/apartments_info', {
+        fetch('https://mighty-sea-02606.herokuapp.com/apartments_info', {
             method: 'post',
             headers: {
                 'content-type': 'application/json'

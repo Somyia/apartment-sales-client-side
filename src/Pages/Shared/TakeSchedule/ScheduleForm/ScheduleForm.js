@@ -32,7 +32,7 @@ const ScheduleForm = (props) => {
 
         }
 
-        fetch('https://quiet-sea-21548.herokuapp.com/schedules', {
+        fetch('https://mighty-sea-02606.herokuapp.com/schedules', {
             method: 'post',
             headers: {
                 'content-type': 'application/json'

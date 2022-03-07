@@ -28,7 +28,7 @@ const GiveReview = () => {
             photo: review.photo,
             review: review.review
         }
-        fetch('https://quiet-sea-21548.herokuapp.com/reviews', {
+        fetch('https://mighty-sea-02606.herokuapp.com/reviews', {
             method: 'post',
             headers: {
                 'content-type': 'application/json'

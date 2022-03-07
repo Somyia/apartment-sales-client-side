@@ -9,7 +9,7 @@ const TakeSchedule = () => {
     const [apartmentInfo, setApartmentInfo] = useState({});
 
     useEffect(() => {
-        fetch(`https://quiet-sea-21548.herokuapp.com/apartments_info/${id}`)
+        fetch(`https://mighty-sea-02606.herokuapp.com/apartments_info/${id}`)
             .then(res => res.json())
             .then(data => setApartmentInfo(data))
 
