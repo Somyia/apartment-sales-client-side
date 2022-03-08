@@ -9,11 +9,12 @@ const AboutImage = styled('div')({
 
 const About = () => {
     return (
-        <Box sx={{ my: 8, pb: 16 }}>
-            <Container sx={{ my: 6 }}>
+        <Box sx={{ my: 8 }}>
+            <Container sx={{ py: 6 }}>
                 {/* overview section */}
-                <div className="flex-display">
-                    <div style={{ width: '50%' }}>
+
+                <div className="about-section flex-display">
+                    <div className="about-left">
                         <div className="flex-display">
                             <div style={{ width: "75%", height: "300px" }}>
                                 <div className="about-image-left">
@@ -29,11 +30,11 @@ const About = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="about-text" style={{ width: '50%' }}>
+                    <div className="about-text">
                         <div>
                             <h6>Overview</h6>
                             <h1>Modern Spaces And Premium Apartment</h1>
-                            <p>Staying calm, composed and maintaining strong self esteem in today’s tough environment can be difficult but is not impossible if you follow a few simple guidelines.<br />
+                            <p>Staying calm, composed and maintaining strong self esteem in today’s tough environment can be difficult but is not impossible if you follow a few simple guidelines.<br /> <br />
 
                                 Everything and everyone else around you can affect your self esteem. Other people can deliberately or inadvertently damage your self image. Unchecked people and circumstances can ultimately destroy your</p>
                         </div>

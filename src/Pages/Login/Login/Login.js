@@ -32,7 +32,7 @@ const Login = () => {
                         Sign In
                     </Typography>
                 </div>
-                {isLoading ? <CircularProgress /> :
+                {isLoading ? <div style={{ textAlign: "center" }}><CircularProgress /> </div> :
                     <form onSubmit={handleSignIn}>
                         <TextField
                             required
@@ -52,9 +52,9 @@ const Login = () => {
                             name="password"
                             onBlur={handleInput}
                         /> <br />
-                        <Button type="submit" className="home-btn" variant="outlined">Login</Button> <br />
+                        <button type="submit" className="home-btn" variant="outlined">Login</button> <br />
                         <NavLink className="access-info" to="/register">
-                            <Button variant="text">New User? Sign Up</Button>
+                            <Button style={{ color: "#c9b47f" }} variant="text">New User? Sign Up</Button>
                         </NavLink>
                     </form>
                 }

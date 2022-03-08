@@ -34,14 +34,12 @@ const MakeAdmin = () => {
 
     return (
         <Box sx={{ my: 8 }}>
-            <Container sx={{ my: 6 }}>
-                {/* gallery title  */}
-                <div>
-                    <Typography className="title" variant="h3" gutterBottom component="div">
-                        Make Admin
-                    </Typography>
+            <Container sx={{ py: 4 }} style={{ width: "50%", boxShadow: "rgb(226 205 159) 0px 0px 20px" }} >
+                {/* Make Admin title  */}
+                <div className="dashboard-title">
+                    <h4>Make Admin</h4>
                 </div>
-                {isLoading ? <CircularProgress /> : <Box style={{ width: '40%', margin: 'auto' }}>
+                {isLoading ? <CircularProgress /> : <Box style={{ width: '80%', margin: 'auto' }}>
                     <form onSubmit={handleMakeAdmin}>
                         <TextField
                             required
@@ -53,7 +51,7 @@ const MakeAdmin = () => {
                             onBlur={handleInput}
                         /> <br />
 
-                        <Button type="submit" className="home-btn" variant="outlined">Make Admin</Button> <br />
+                        <button type="submit" className="home-btn" variant="outlined">Make Admin</button> <br />
 
                     </form>
                 </Box>

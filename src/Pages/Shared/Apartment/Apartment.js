@@ -18,7 +18,7 @@ const Apartment = (props) => {
     }
     const { _id, apartment_name, location, floor_no, bathrooms, kitchen, garage, bedrooms, apartment_photo, description } = props.apartment;
     return (
-        <Grid item xs={12} sm={12} md={6}>
+        <Grid item xs={12} sm={6} md={6}>
             <Grid container className="apartment-area">
                 <Grid sx={{ height: '200px' }} item xs={3} md={2} className="apartment-info-left">
                     <div className="apartment-info">

@@ -48,12 +48,10 @@ const AddApartmentInfo = () => {
     return (
 
         <Box sx={{ my: 6 }}>
-            <Container sx={{ my: 6 }}>
+            <Container sx={{ my: 4 }}>
                 {/* gallery title  */}
-                <div>
-                    <Typography className="title" variant="h3" gutterBottom component="div">
-                        Add Apartment Information
-                    </Typography>
+                <div className="dashboard-title">
+                    <h4>Add New Apartment Info</h4>
                 </div>
                 <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 12, sm: 12, md: 12 }}>
                     <Box style={{ width: '90%', margin: '50px auto' }}>
@@ -141,7 +139,7 @@ const AddApartmentInfo = () => {
                                 rows={4}
                                 onBlur={handleInput}
                             /> <br />
-                            <Button style={{ marginLeft: '10px', marginBottom: '15px' }} type="submit" className="home-btn" variant="outlined">Add Apartment Info</Button>
+                            <button style={{ marginLeft: '10px', marginBottom: '15px' }} type="submit" className="home-btn" variant="outlined">Add Apartment Info</button>
                         </form>
                         {success && <Alert severity="success">New Apartment infor is added successfully</Alert>}
                     </Box>

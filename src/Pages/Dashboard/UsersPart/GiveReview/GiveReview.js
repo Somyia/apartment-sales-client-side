@@ -47,16 +47,14 @@ const GiveReview = () => {
 
     return (
         <>
-            <Box sx={{ my: 6 }}>
-                <Container sx={{ my: 6 }}>
+            <Box sx={{ my: 6 }} >
+                <Container sx={{ py: 6 }} style={{ width: "50%", boxShadow: "rgb(226 205 159) 0px 0px 20px" }}>
                     {/* gallery title  */}
-                    <div>
-                        <Typography className="title" variant="h3" gutterBottom component="div">
-                            Tell Something About Us
-                </Typography>
+                    <div className="dashboard-title">
+                        <h4>Tell Something About Us</h4>
                     </div>
                     <Grid container spacing={2}>
-                        <div style={{ width: '60%', margin: 'auto' }}>
+                        <div style={{ width: '80%', margin: 'auto' }}>
                             <Grid item xs={12} md={12}>
                                 <form className="hometex-form" onSubmit={handleReviewUs}>
                                     <TextField
@@ -98,7 +96,7 @@ const GiveReview = () => {
                                             setValue(newValue);
                                         }}
                                     /> <br /> <br />
-                                    <Button type="submit" className="home-btn" variant="outlined">Review Us</Button>
+                                    <button type="submit" className="home-btn">Review Us</button>
                                 </form>
                             </Grid>
                         </div>

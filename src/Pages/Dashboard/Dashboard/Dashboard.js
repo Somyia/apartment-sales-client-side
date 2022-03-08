@@ -8,7 +8,7 @@ import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
+import logo from '../../../logo.png';
 import { NavLink, useRouteMatch, Switch, Route, } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import { Button, CircularProgress, List } from '@mui/material';
@@ -24,7 +24,7 @@ import ManageApartment from '../AdminPart/ManageApartment/ManageApartment';
 const drawerWidth = 240;
 
 function Dashboard(props) {
-  const { isLoading, logOut, admin } = useAuth();
+  const { isLoading, logOut, admin, user } = useAuth();
   let { path, url } = useRouteMatch();
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -38,46 +38,56 @@ function Dashboard(props) {
 
   const drawer = (
     <div>
-      <Toolbar />
-      <Divider />
+      <div>
+        <NavLink to="/home">
+          <div className="flex-display">
+            <div>
+              <img width="70px" src={logo} alt="logo" />
+            </div>
+            <div>
+              <h1 className="logo-text"> Home<span>Tex</span></h1>
+            </div>
+          </div>
+        </NavLink>
+      </div>
 
       {admin ?
         <List className="dashboard-menu">
-          <NavLink className="menu-item" to="/">
+          <NavLink className="menu-item dashboard-menu-item" to="/" >
             <Button color="inherit">Home</Button>
           </NavLink>
-          <NavLink className="menu-item" to={`${url}`}>
+          <NavLink className="menu-item dashboard-menu-item" to={`${url}`}>
             <Button color="inherit">Manage Schedule</Button>
           </NavLink>
-          <NavLink className="menu-item" to={`${url}/addApartmentInfo`}>
+          <NavLink className="menu-item dashboard-menu-item" to={`${url}/addApartmentInfo`}>
             <Button color="inherit">Add Apartment Info</Button>
           </NavLink>
-          <NavLink className="menu-item" to={`${url}/makeAdmin`}>
+          <NavLink className="menu-item dashboard-menu-item" to={`${url}/makeAdmin`}>
             <Button color="inherit">Make Admin</Button>
           </NavLink>
-          <NavLink className="menu-item" to={`${url}/manageApartment`}>
+          <NavLink className="menu-item dashboard-menu-item" to={`${url}/manageApartment`}>
             <Button color="inherit">Manage Apartment</Button>
           </NavLink>
-          <NavLink className="menu-item" to="/">
+          <NavLink className="menu-item dashboard-menu-item" to="/">
             <Button onClick={logOut} color="inherit">LogOut</Button>
           </NavLink>
 
         </List>
         :
         <List className="dashboard-menu">
-          <NavLink className="menu-item" to="/">
+          <NavLink className="menu-item dashboard-menu-item" to="/">
             <Button color="inherit">Home</Button>
           </NavLink>
-          <NavLink className="menu-item" to={`${url}`}>
+          <NavLink className="menu-item dashboard-menu-item" to={`${url}`}>
             <Button color="inherit">My Schedule</Button>
           </NavLink>
-          <NavLink className="menu-item" to={`${url}/payment`}>
+          <NavLink className="menu-item dashboard-menu-item" to={`${url}/payment`}>
             <Button color="inherit">Payment</Button>
           </NavLink>
-          <NavLink className="menu-item" to={`${url}/giveReview`}>
+          <NavLink className="menu-item dashboard-menu-item" to={`${url}/giveReview`}>
             <Button color="inherit">Give Review</Button>
           </NavLink>
-          <NavLink className="menu-item" to="/">
+          <NavLink className="menu-item dashboard-menu-item" to="/">
             <Button onClick={logOut} color="inherit">LogOut</Button>
           </NavLink>
 
@@ -92,13 +102,15 @@ function Dashboard(props) {
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
       <AppBar
+        style={{ backgroundColor: '#fff', boxShadow: "none", borderBottom: "1px solid #c9b47f" }}
         position="fixed"
         sx={{
           width: { sm: `calc(100% - ${drawerWidth}px)` },
           ml: { sm: `${drawerWidth}px` },
         }}
       >
-        <Toolbar className="dashboard-header">
+        <Toolbar className="dashboard-header" style={{}}>
+
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -108,9 +120,10 @@ function Dashboard(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap component="div">
-            Dashboard
-          </Typography>
+          <div style={{ color: "rgb(126 123 123)", lineHeight: "1" }}>
+            <h4>Hi! Admin  </h4>
+            <p>{user?.email}</p>
+          </div>
         </Toolbar>
       </AppBar>
       <Box
@@ -146,6 +159,7 @@ function Dashboard(props) {
         </Drawer>
       </Box>
       <Box
+        style={{ backgroundColor: "rgb(252 247 238 / 29%)" }}
         component="main"
         sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
       >

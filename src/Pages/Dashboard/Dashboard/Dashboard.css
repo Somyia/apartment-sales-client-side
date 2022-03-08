@@ -10,5 +10,8 @@ header.css-zxtyt4-MuiPaper-root-MuiAppBar-root .css-8u39c-MuiTypography-root{
 .dashboard-menu .menu-item .css-b7766g{
     display: block;
     margin: auto;
-    font-weight: 700;
+    font-weight: 400;
+}
+.dashboard-menu-item button{
+    font-weight: 500 !important;
 }

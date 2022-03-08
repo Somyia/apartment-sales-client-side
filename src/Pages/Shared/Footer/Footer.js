@@ -17,7 +17,7 @@ const Footer = () => {
         <Box className="footer-area">
             <Container sx={{ py: 8 }}>
                 <Grid container spacing={2}>
-                    <Grid item xs={12} md={4}>
+                    <Grid item xs={12} sm={4} md={4}>
                         <div className="flex-display">
                             <div>
                                 <img width="70px" src={logo} alt="logo" />
@@ -29,7 +29,7 @@ const Footer = () => {
                         </div>
                         <Typography className="footer-text" component="p">HomeTex is committed to ensuring digital accessibility for individuals with disabilities.  We are continuously working to improve the accessibility of our web experience for everyone,  and we welcome feedback and accommodation requests. If you wish to report an issue or seek an  accommodation</Typography>
                     </Grid>
-                    <Grid item xs={12} md={4}>
+                    <Grid item xs={12} sm={4} md={4}>
                         <div>
                             <Typography className="footer-heading" component="h3"> Neibourhood</Typography>
                             <nav aria-label="main mailbox folders">
@@ -70,7 +70,7 @@ const Footer = () => {
                             </nav>
                         </div>
                     </Grid>
-                    <Grid item xs={12} md={4}>
+                    <Grid item xs={12} sm={4} md={4}>
                         <div>
                             <Typography className="footer-heading" component="h3"> Contacts</Typography>
                             <List>

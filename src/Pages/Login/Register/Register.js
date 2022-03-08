@@ -70,10 +70,10 @@ const Register = () => {
                             name="password2"
                             onBlur={handleInput}
                         /> <br />
-                        <Button type="submit" className="home-btn" variant="outlined">Register</Button> <br />
+                        <button type="submit" className="home-btn" variant="outlined">Register</button> <br />
 
                         <NavLink className="access-info" to="/login">
-                            <Button variant="text">Already have an account? Sign In</Button>
+                            <Button style={{ color: "#c9b47f" }} variant="text">Already have an account? Sign In</Button>
                         </NavLink>
 
                     </form>

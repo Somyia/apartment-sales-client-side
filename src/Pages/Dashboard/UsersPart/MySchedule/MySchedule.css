@@ -1,10 +1,55 @@
+
 .apartment-table.css-quj9j6-MuiTable-root thead th{
     color: #c9b47f;
     font-weight: 700;
     font-family: 'Jost', sans-serif;
     font-size: 16px;
 }
-
+.apartment-table{
+    border: 1px solid #c9b47f;
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: none;
+}
+.apartment-table thead th{
+    background-color: #c9b47f;
+    padding: 20px;
+    font-size: 20px;
+}
+table.apartment-table td{
+    border-top: 1px solid #c9b47f;
+    padding: 10px;
+    line-height: 1;
+    color:#7e7878
+}
+.apartment-table tbody tr{
+    transition: .4s;
+}
+.apartment-table tbody tr:hover{
+    background-color: #f0e6d0;
+}
+.home-btn{
+    background-color: transparent;
+    color: #c9b47f;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #c9b47f;
+    transition: .3s;
+}
+.home-btn:hover{
+    background-color: #c9b47f;
+    color: #000;
+}
+.dashboard-title h4{
+    font-size: 40px;
+    color: #cab06e;
+    text-align: center;
+}
 .apartment-table.css-quj9j6-MuiTable-root tbody th, .apartment-table.css-quj9j6-MuiTable-root tbody td{
     font-family: 'Jost', sans-serif;
 }

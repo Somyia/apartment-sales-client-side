@@ -21,3 +21,8 @@
     font-family: "Jost', sans-serif";
     margin: 5px;
 }
+@media screen and (max-width: 668px){
+    .access-form{
+        width: 80%;
+    }
+}

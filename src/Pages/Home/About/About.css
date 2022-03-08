@@ -2,6 +2,9 @@
     display: flex;
     align-items: center;
 }
+.about-left, .about-text{
+    width:50%;
+}
 .about-image-right{
     margin-top: 55px;
     margin-left: -55px;
@@ -47,4 +50,19 @@ font-size: 40px;
 .about-text{
     text-align: justify;
     color: rgb(143, 140, 140);
+    padding-right: 30px;
+}
+@media screen and (max-width: 668px){
+    .about-section{
+        flex-direction: column;
+    }
+    .about-left, .about-text{
+        width: 100%;
+    }
+    .about-left{
+        padding-bottom:80px;
+    }
+    .about-text h1{
+        font-size: 20px;
+        }
 }
