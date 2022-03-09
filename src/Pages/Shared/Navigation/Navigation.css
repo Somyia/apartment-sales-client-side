@@ -1,3 +1,24 @@
+.search-bar{
+    margin-right: 20px;
+}
+
+.search-bar input{
+    border: 1px solid rgb(206, 205, 205);
+    outline: none;
+    padding: 7px;
+    border-radius: 5px;
+    width: 400px;
+
+}
+.search-bar button{
+    border:none;
+    background: transparent;
+    color: #c9b47f;
+    margin: -7px 0;
+}
+.search-bar button svg{
+    margin: -7px 0;
+}
 .menu-item{
     color: #312e2e;
     

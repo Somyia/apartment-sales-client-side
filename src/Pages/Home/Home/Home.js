@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from "../../../Pages/Shared/Navbar/Navbar";
 import Footer from '../../Shared/Footer/Footer';
+import SearchedApartment from '../../Shared/SearchedApartment/SearchedApartment';
 import About from '../About/About';
 import Banner from '../Banner/Banner';
 import Gallery from '../Gallery/Gallery';
@@ -13,6 +14,7 @@ const Home = () => {
         <div >
             <NavBar></NavBar>
             <Banner></Banner>
+            <SearchedApartment></SearchedApartment>
             <About></About>
             <HomeApartments></HomeApartments>
             <Gallery></Gallery>

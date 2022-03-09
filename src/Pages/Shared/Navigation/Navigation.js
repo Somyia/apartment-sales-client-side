@@ -1,13 +1,17 @@
+import { SearchOutlined } from '@mui/icons-material';
 import { Button, List } from '@mui/material';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import './Navigation.css';
 
 const Navigation = () => {
     const { user, logOut } = useAuth();
+
+
     return (
         <List>
+
             <NavLink className="menu-item" to="/home">
                 <Button color="inherit">Home</Button>
             </NavLink>
