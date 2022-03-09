@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import { Button, Container, Grid, Typography, Alert } from '@mui/material';
 import TextField from '@mui/material/TextField';
+import './AddApartmentInfo.css';
 
 const AddApartmentInfo = () => {
     const [apartmentInfo, setApartmentInfo] = useState({});
@@ -64,6 +65,7 @@ const AddApartmentInfo = () => {
                                 type="text"
                                 name="apartment_name"
                                 onBlur={handleInput}
+                                className="apartmant-info"
                             />
                             <TextField
                                 required

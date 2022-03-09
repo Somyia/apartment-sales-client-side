@@ -33,7 +33,7 @@ const ManageSchedule = () => {
             <Container sx={{ my: 6 }}>
                 {/* gallery title  */}
                 <div className="dashboard-title">
-                    <h4>My Schedule</h4>
+                    <h4>Manage Schedule</h4>
                 </div>
                 <Grid container spacing={2}>
                     <Grid item xs={12} md={12}>

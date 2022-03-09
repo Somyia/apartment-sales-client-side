@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import { Button, CircularProgress, Container, TextField, Typography, Alert } from '@mui/material';
 import useAuth from '../../../../hooks/useAuth';
+import './MakeAdmin.css'
 
 const MakeAdmin = () => {
     const [email, setEmail] = useState('');
@@ -33,8 +34,8 @@ const MakeAdmin = () => {
     }
 
     return (
-        <Box sx={{ my: 8 }}>
-            <Container sx={{ py: 4 }} style={{ width: "50%", boxShadow: "rgb(226 205 159) 0px 0px 20px" }} >
+        <Box sx={{ my: 4 }}>
+            <Container sx={{ pt: 2, pb: 6 }} className="make-admin-section">
                 {/* Make Admin title  */}
                 <div className="dashboard-title">
                     <h4>Make Admin</h4>

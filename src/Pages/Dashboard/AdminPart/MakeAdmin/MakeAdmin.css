@@ -1,0 +1,9 @@
+.make-admin-section{
+    width: 50%;
+    box-shadow: rgb(226 205 159) 0px 0px 20px;
+}
+@media screen and (max-width:991px){
+    .make-admin-section{
+        width: 80%;
+    }
+}
